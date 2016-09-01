@@ -1,7 +1,7 @@
 FROM opensuse:tumbleweed
 
 # 0. Install dependencies
-RUN zypper -n in git-core gcc5-c++
+RUN zypper -n in which git-core gcc5-c++ 
 
 # 1. Clone
 RUN cd /tmp && \
