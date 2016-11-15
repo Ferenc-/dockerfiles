@@ -4,7 +4,7 @@ FROM opensuse:tumbleweed
 RUN zypper -n in which wget tar gcc6-c++ gcc-c++ gcc
 
 # 1. Clone
-RUN wget -qO-  http://downloads.sourceforge.net/boost/boost_1_62_0_b1.tar.gz | tar xz -C /tmp/
+RUN wget -qO- http://downloads.sourceforge.net/boost/boost_1_62_0.tar.gz | tar xz -C /tmp/
 
 # 2. Bootstrap 
 RUN cd /tmp/boost_1_62_0/ && ls -lah && ./bootstrap.sh
